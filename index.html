@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>بكّه ترافيل | Bakkah Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="بكّه ترافيل - رحلات عمرة وحج، حجز طيران، وسياحة داخلية وخارجية بتنظيم احترافي.">
+  <!-- خط عربي جميل -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="container nav">
+      <div class="nav-left">
+        <div class="logo-circle">BT</div>
+        <div>
+          <div class="logo-text-main">Bakkah Travel</div>
+          <div class="logo-text-sub">عمرة – حج – طيران – سياحة</div>
+        </div>
+      </div>
+      <button class="nav-toggle" id="navToggle">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero">الرئيسية</a>
+        <a href="#services">الخدمات</a>
+        <a href="#steps">خطوات الحجز</a>
+        <a href="#group">جروب العمرة</a>
+        <a href="#contact">تواصل وحجز</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline">طلب عرض سعر</a>
+        <a href="https://wa.me/201000000000" target="_blank" class="btn btn-primary">حجز عبر واتساب</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">
+          ✈️ رحلات منظمة • 🕋 عمرة شهرية
+        </div>
+        <h1 class="hero-title">
+          رحلتك للـ <span class="hero-highlight">عمرة والحج</span> تبدأ من هنا.
+        </h1>
+        <p class="hero-text">
+          بكّه ترافيل بتوفر لك برامج عمرة وحج، حجز طيران، ورحلات سياحية داخلية وخارجية
+          بتنظيم احترافي، أسعار مناسبة، ومتابعة خطوة بخطوة من لحظة الاستفسار لحد رجوعك بالسلامة.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/201000000000?text=السلام عليكم، أريد الاستفسار عن برامج العمرة."
+             target="_blank" class="btn btn-primary">
+            احجز عمرة الآن عبر واتساب
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            طلب اتصال من خدمة العملاء
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>⭐ أكثر من <strong>+500</strong> عميل خدمناهم</span>
+          <span>🕒 دعم على مدار <strong>اليوم</strong></span>
+          <span>🌍 رحلات من <strong>مصر</strong> لوجهات مختلفة</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-tag">
+          🔔 اشتراك مجاني في متابعة الرحلات
+        </div>
+        <h3>نموذج حجز سريع</h3>
+        <p>املأ بياناتك، وفريقنا يتواصل معك في أقرب وقت لتأكيد الحجز وتفاصيل البرنامج.</p>
+
+        <form id="quickForm">
+          <div class="form-group">
+            <label for="q_name">الاسم الكامل</label>
+            <input type="text" id="q_name" required placeholder="مثال: أحمد سامي">
+          </div>
+          <div class="form-group">
+            <label for="q_phone">رقم الجوال (واتساب)</label>
+            <input type="tel" id="q_phone" required placeholder="+20 10xxxxxxx">
+          </div>
+          <div class="form-group">
+            <label for="q_type">نوع الحجز المطلوب</label>
+            <select id="q_type">
+              <option value="عمرة">عمرة</option>
+              <option value="حج">حج</option>
+              <option value="طيران">تذكرة طيران</option>
+              <option value="سياحة داخلية">رحلة سياحة داخلية</option>
+              <option value="سياحة خارجية">رحلة سياحة خارجية</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">
+            إرسال طلب الحجز
+          </button>
+        </form>
+
+        <ul class="hero-card-list">
+          <li><span class="dot"></span> تأكيد سريع عبر واتساب أو مكالمة.</li>
+          <li><span class="dot"></span> برامج متنوعة تناسب كل الميزانيات.</li>
+          <li><span class="dot"></span> متابعة قبل وأثناء وبعد الرحلة.</li>
+        </ul>
+
+        <div class="hero-pill-row">
+          <span class="hero-pill">فنادق قريبة من الحرم</span>
+          <span class="hero-pill">إجراءات ميسّرة</span>
+          <span class="hero-pill">مجموعات عائلية</span>
+        </div>
+
+        <div class="hero-badge-footer">
+          <span>💬 للرد السريع، تواصل مباشرة عبر واتساب.</span>
+          <span>⏱ متوسط وقت الرد: أقل من 30 دقيقة.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">خدمات بكّه ترافيل</h2>
+      <p class="section-subtitle">
+        نخدمك في كل ما يخص السفر: من أول الاستشارة، مرورًا بالتخطيط، وحتى العودة بالسلامة.
+      </p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-label">خدمة مميزة</div>
+          <div class="card-title">برامج عمرة وحج</div>
+          <div class="card-text">
+            برامج متنوعة (اقتصادي – 4 نجوم – 5 نجوم) مع خيارات غرف مختلفة، وتنسيق كامل للمواصلات والفنادق.
+          </div>
+          <div class="card-footer">
+            <span>🕋 رحلات شهرية</span>
+            <a href="#contact">تفاصيل أكثر →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-label">سعر منافس</div>
+          <div class="card-title">حجوزات الطيران</div>
+          <div class="card-text">
+            حجز تذاكر طيران من وإلى أغلب الوجهات، مع مقارنة بين عدة خطوط طيران للحصول على أفضل سعر ممكن.
+          </div>
+          <div class="card-footer">
+            <span>✈️ دولي ومحلي</span>
+            <a href="#contact">احصل على عرض →</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-label">للأفراد والعائلات</div>
+          <div class="card-title">سياحة داخلية وخارجية</div>
+          <div class="card-text">
+            رحلات إلى شرم الشيخ، الغردقة، الأقصر وأسوان، بالإضافة لبرامج سياحية خارجية مصممة حسب ميزانيتك.
+          </div>
+          <div class="card-footer">
+            <span>🌍 برامج مرنة</span>
+            <a href="#contact">اطلب برنامجك →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section id="steps">
+    <div class="container">
+      <h2 class="section-title">كيف يتم حجز رحلتك؟</h2>
+      <p class="section-subtitle">
+        خطوات سهلة وواضحة علشان تحجز وأنت مطمّن.
+      </p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-title">إرسال طلب</div>
+          <p class="step-text">تملأ النموذج أو تبعت لنا رسالة واتساب بنوع الرحلة وعدد الأفراد والتاريخ المبدئي.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-title">استشارة وعرض سعر</div>
+          <p class="step-text">نرشح لك أفضل برامج متاحة ونرسل لك عروض الأسعار بالتفاصيل كاملة.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-title">تأكيد الحجز</div>
+          <p class="step-text">بعد اختيارك للبرنامج يتم تأكيد الحجز ودفع العربون واستلام الفاتورة الرسمية.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-title">المتابعة حتى العودة</div>
+          <p class="step-text">فريق المتابعة يوجّهك قبل السفر، وأثناء الرحلة، وحتى العودة بالسلامة بإذن الله.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Group CTA -->
+  <section id="group">
+    <div class="container">
+      <div class="group-section">
+        <div>
+          <div class="group-badge">🎧 متابعة مباشرة</div>
+          <h3>انضم لجروب متابعة رحلات العمرة والطيران</h3>
+          <p>
+            اشترك مجانًا في جروب واتساب أو تليجرام لمتابعة مواعيد رحلات العمرة، آخر العروض على تذاكر الطيران،
+            وتنبيهات خاصة بالمشتركين فقط.
+          </p>
+          <ul class="group-list">
+            <li>✅ تنبيهات بمواعيد الرحلات الجديدة.</li>
+            <li>✅ عروض خاصة لأعضاء الجروب.</li>
+            <li>✅ إجابة فورية على استفسارات السفر.</li>
+          </ul>
+          <div class="hero-ctas">
+            <a href="https://chat.whatsapp.com/xxxxxxxx" target="_blank" class="btn btn-primary">
+              انضم لجروب واتساب
+            </a>
+            <a href="https://t.me/xxxxxxxx" target="_blank" class="btn btn-outline">
+              انضم لجروب تليجرام
+            </a>
+          </div>
+        </div>
+        <div class="group-card">
+          <div class="group-card-header">
+            <div>
+              <div class="group-name">Bakkah Travel | Umrah Group</div>
+              <div style="font-size:0.75rem; opacity:0.85;">جروب مخصص لمتابعة رحلات العمرة والحج من مصر.</div>
+            </div>
+            <span class="group-status">مفتوح الآن</span>
+          </div>
+          <div style="font-size:0.8rem; margin-bottom:0.4rem;">
+            ⏰ آخر إشعار: <strong>تم فتح حجز عمرة رجب – أماكن محدودة</strong>
+          </div>
+          <div style="font-size:0.78rem; opacity:0.9;">
+            بمجرد الانضمام للجروب، هتوصلك كل التحديثات الخاصة بمواعيد السفر، المستندات المطلوبة، ونصائح مهمة قبل
+            الرحلة.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h2 class="section-title">الأسئلة الشائعة</h2>
+      <p class="section-subtitle">
+        بعض الأسئلة اللي تتكرر من عملائنا، لو سؤالك مختلف تواصل معنا مباشرة.
+      </p>
+
+      <div class="faq">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>ما هي المستندات المطلوبة للعمرة؟</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            جواز سفر ساري، صورة شخصية، شهادة تطعيم (إن وُجدت تعليمات خاصة)، وأي متطلبات إضافية حسب التعليمات
+            الحالية لوزارة الحج والعمرة وشركات الطيران.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>هل يمكن حجز تذكرة طيران فقط بدون برنامج عمرة؟</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            نعم، يمكن حجز تذكرة طيران فقط لأي وجهة تريدها، مع إمكانية إضافة خدمات أخرى مثل الفندق أو الانتقالات عند
+            الطلب.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>هل يوجد برامج خاصة للعائلات والمجموعات؟</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            بالتأكيد، نوفر برامج خاصة للعائلات والمجموعات بأسعار مميزة، ويمكن تصميم برنامج حسب عدد الأفراد والميزانية.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">احجز رحلتك الآن</h2>
+      <p class="section-subtitle">
+        املأ البيانات التالية وسيقوم فريق المبيعات بالتواصل معك لتأكيد التفاصيل وإرسال أفضل العروض.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>نموذج طلب حجز</h3>
+          <p>كل البيانات سرية وتستخدم فقط للتواصل معك بشأن الطلب.</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">الاسم الكامل</label>
+                <input type="text" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">رقم الجوال (واتساب)</label>
+                <input type="tel" id="phone" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني (اختياري)</label>
+                <input type="email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="tripType">نوع الرحلة</label>
+                <select id="tripType">
+                  <option>عمرة</option>
+                  <option>حج</option>
+                  <option>تذكرة طيران</option>
+                  <option>سياحة داخلية</option>
+                  <option>سياحة خارجية</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fromCity">مدينة المغادرة</label>
+                <input type="text" id="fromCity" placeholder="مثال: القاهرة">
+              </div>
+              <div class="form-group">
+                <label for="startDate">تاريخ السفر المبدئي</label>
+                <input type="date" id="startDate">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="peopleCount">عدد الأفراد</label>
+              <input type="number" id="peopleCount" min="1" value="1">
+            </div>
+
+            <div class="form-group">
+              <label for="message">ملاحظات أو طلبات خاصة</label>
+              <textarea id="message" placeholder="اكتب أي تفاصيل إضافية تهمك (غرف ثلاثية، ذوي احتياجات خاصة، ميزانية تقريبية…)."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.4rem;">
+              إرسال الطلب الآن
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+          <div class="info-block">
+            <h4>تواصل مباشر</h4>
+            <ul class="info-list">
+              <li>📞 هاتف: 01000000000+</li>
+              <li>💬 واتساب: <a href="https://wa.me/201000000000" target="_blank">اضغط هنا للمراسلة</a></li>
+              <li>✉️ بريد: bakkahtravel.office@gmail.com</li>
+              <li>📍 العنوان: القاهرة – مصر</li>
+            </ul>
+          </div>
+
+          <div class="info-block">
+            <h4>أوقات العمل</h4>
+            <ul class="info-list">
+              <li>🕒 من 10 صباحًا حتى 10 مساءً</li>
+              <li>📆 طوال أيام الأسبوع ما عدا الجمعة.</li>
+            </ul>
+          </div>
+
+          <div class="info-block">
+            <h4>نصيحة قبل الحجز</h4>
+            <p style="font-size:0.8rem; color:#6b7280;">
+              جهّز جواز سفرك، وتأكد من صلاحيته، واحجز مبكرًا قدر الإمكان لتحصل على أفضل الأسعار في الطيران والفنادق.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Bakkah Travel – جميع الحقوق محفوظة.</div>
+      <div class="footer-links">
+        <a href="#hero">الرئيسية</a>
+        <a href="#services">الخدمات</a>
+        <a href="#group">جروب العمرة</a>
+        <a href="#contact">حجز وتواصل</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top Button -->
+  <button id="scrollTopBtn">↑</button>
+
+</body>
+</html>
